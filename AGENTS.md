@@ -22,8 +22,10 @@ Use the **knowledge base** for roadmap, strategy, and product questions. Read fi
 When the user says "onboard", "setup", "PM-OS setup", "get started", or "configure PM-OS":
 
 1. Read `.cursor/agents/onboarding.md` for the full onboarding workflow
-2. Follow the instructions there — ask questions in batches, then write the rule file, create the product folder, configure MCPs, and set up the Continual Learning plugin
-3. Do NOT just give instructions — run the interactive flow directly
+2. Follow the instructions there — run the interactive flow directly
+3. Use the **AskQuestion tool** for structured choices (role, product type, tools) so options appear as clickable buttons in the Cursor UI
+4. Use text messages for free-form input (company name, goals, stakeholders)
+5. Do NOT just give instructions — execute the setup yourself
 
 ## Communication style
 
