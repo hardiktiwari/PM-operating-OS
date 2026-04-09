@@ -1,21 +1,24 @@
-# Generated output (run setup to regenerate)
-output/
-
-# MCP config — contains API keys after you fill in placeholders
+# MCP config — contains API keys
 .cursor/mcp.json
 
-# User-specific rules (not part of the repo template)
+# User-specific rules (generated during onboarding)
 .cursor/rules/
 
-# Scheduler secrets and runtime files
-scheduler/.env
-scheduler/.venv/
-scheduler/.gdrive_token.json
-scheduler/credentials.json
-scheduler/scheduler.log
-scheduler/scheduler-stdout.log
-scheduler/scheduler-stderr.log
-scheduler/__pycache__/
+# Hook state (local)
+.cursor/hooks/
 
-# Local config overrides (optional - keep template in git)
-# config/my-config.yaml
+# OS files
+.DS_Store
+
+# Editor
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Drafts (local workspace)
+workspace/drafts/*
+!workspace/drafts/.gitkeep
