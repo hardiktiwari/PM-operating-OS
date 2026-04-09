@@ -17,6 +17,14 @@ Use the **knowledge base** for roadmap, strategy, and product questions. Read fi
 - **Products:** `knowledge/products/` — each product has `brief.md` (read first), `roadmap.md`, `metrics.md`, `updates.md`, `experiments/`, `releases/`
 - **When to use:** For ANY product-specific question, ALWAYS read `knowledge/products/<product>/` before answering
 
+## Onboarding
+
+When the user says "onboard", "setup", "PM-OS setup", "get started", or "configure PM-OS":
+
+1. Read `.cursor/agents/onboarding.md` for the full onboarding workflow
+2. Follow the instructions there — ask questions in batches, then write the rule file, create the product folder, configure MCPs, and set up the Continual Learning plugin
+3. Do NOT just give instructions — run the interactive flow directly
+
 ## Communication style
 
 - Be concise and executive-ready
