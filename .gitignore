@@ -22,3 +22,7 @@ __pycache__/
 # Drafts (local workspace)
 workspace/drafts/*
 !workspace/drafts/.gitkeep
+
+# Local tool installs (binaries, cloned MCP server + node_modules)
+.local/
+google-drive-mcp/
