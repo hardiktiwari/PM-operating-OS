@@ -41,3 +41,14 @@ Runs after every conversation — extracts corrections and writes them here. -->
 
 <!-- Auto-populated by the Continual Learning plugin.
 Extracts durable workspace facts from conversations. -->
+
+## Cursor Cloud specific instructions
+
+This is a **pure Markdown/YAML knowledge base** — there is no executable code, no package manager, no build step, and no services to start. The "application" is the repository itself, consumed by Cursor IDE's agent/rules system.
+
+- **No dependencies:** No `package.json`, `requirements.txt`, or similar. The update script is a no-op.
+- **Config validation:** `config/pm-os-config.yaml` can be validated with `python3 -c "import yaml; yaml.safe_load(open('config/pm-os-config.yaml'))"`.
+- **Creating a product:** Copy `knowledge/products/_template/` to `knowledge/products/<slug>/` and fill in `brief.md` first.
+- **Skills:** 18 skills live in `skills/*/SKILL.md`. Each is a self-contained prompt template — no code to run.
+- **MCP integrations** (Figma, Google Drive, Jira) are optional and configured via `.cursor/mcp.json` (gitignored). All skills work without MCPs.
+- **Onboarding flow:** Triggered by saying "onboard" in Cursor chat. Defined in `.cursor/agents/onboarding.md`.
