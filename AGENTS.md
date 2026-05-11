@@ -41,3 +41,14 @@ Runs after every conversation — extracts corrections and writes them here. -->
 
 <!-- Auto-populated by the Continual Learning plugin.
 Extracts durable workspace facts from conversations. -->
+
+## Cursor Cloud specific instructions
+
+This is a **content-only repository** (Markdown + YAML). There is no executable code, no package manager, no build system, no test framework, and no server to start.
+
+- **No dependencies to install.** No `package.json`, `requirements.txt`, or similar files exist.
+- **No lint/test/build commands.** Validation is structural: verify Markdown files exist and YAML parses correctly.
+- **The "application" is the file set itself**, consumed by Cursor IDE's LLM as prompt context and instructions.
+- **Core functionality to validate:** copy `knowledge/products/_template/` to a new product folder; read/write `config/pm-os-config.yaml`; confirm all 18 skills have `SKILL.md`.
+- **Onboarding flow** lives in `.cursor/agents/onboarding.md` and requires the Cursor IDE `AskQuestion` tool (not available in Cloud Agent VMs).
+- **MCP integrations** (Figma, Google Drive, Jira) require user-provided API credentials configured in `.cursor/mcp.json` (gitignored).
